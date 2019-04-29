@@ -1,26 +1,98 @@
-<!DOCTYPE html>
-<!--
-    Name: Peder Duffell
-    Date Created: 3/14/19
-    Most recent revision:
--->
 <html lang="en">
-    <head>
-        <title>Contact</title>
-    </head>
+<head>
+  <title>Duff's</title>
+    <style>
+    body {
+        background-color: #ebf442;
+    }
+    header, footer {
+        background-color: #cb42f4;
+        color: #fef9ff;
+        text-align: center;
+      }
+      h1 {
+        font-family: fantasy;
+          font-size: 2.5em;
+      }
+    .items {
+      font-size: 2.0em;
+    }
+ a {
+   background-color: #cb42f4;
+   color: yellow;
+   padding: 8px;
+   border: thin solid #0d1f2d;
+   text-decoration: none;
+   text-align: center;
+   margin: 20px;
+   width: 100px;
+    }
+    a:active {
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+div.font {
+  font-weight: bold;
+}
 
-    <body>
-        <header>
-            <h1>Call me 612-247-7023</h1>
-        </header>
 
-        <nav>
-<p>address could go here</p>
-        </nav>
+
+    </style>
+  </head>
+  <body>
+    <header>
+<h1>Duff's Bar and Grill</h1>
+</header>
+
+<nav>
+<p><a href="index1.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a></p>
+
+</nav>
+<br>
+<form action="submit.html" method="POST">
+  <div class="font">
+  <label for="firstName"> Name:</label>
+  <input type="text" id=firstName" name="firstName"><br />
+  <label for="email"> Email:</label>
+<input type="text" id="email" name="email"> <br />
+<label for="phone"> Phone:</label>
+<input type="text" id="phone" name="phone"> <br />
+</div>
+<label for="contact">Reason for Inquiry:</label>
+<select id="contact" name="contact">
+<option value="default" selected>--Catering--</option>
+<option value="morning">Private Party</option>
+<option value="afternoon">Feedback</option>
+<option value="evening">Other</option>
+</select><br />
+<label for="info">Additional Information:</label>
+<textarea id="info" name="info"></textarea><br />
+<br />
+<legend>Have you been to the restaurant?:<input type="radio" id="choice1" name="questionnaire" value="no"><label for="choice1">No</label><input type="radio" id="choice2" name="questionnaire" value="yes"><label for="choice2">Yes</label><br />
+</legend><br />
+<legend>Best days to contact you:<input type="checkbox" id="monday" name="interest" value="monday"><label for="monday">M</label><input type="checkbox" id="tuesday" name="interest" value="tuesday"><label for="tuesday">T</label><input type="checkbox" id="wednesday" name="interest" value="wednesday"><label for="wednesday">W</label><input type="checkbox" id="thursday" name="interest" value="thursday"><label for="thursday">Th</label><input type="checkbox" id="friday" name="interest"value="friday"><label for="friday">F</label></legend><br />
+<input type="submit" name="submit" value="Send Request">
 <hr />
+<p>777 Main St, Burnsville, MN 55337</p>
+<p>612-555-1234</p>
 
-        <footer>
 
-        </footer>
+
+
+
+
+
+
+
+
+
+<footer>
+  <hr />
+  <p>&copy; 2018 Peder Duffell.  All rights reserved.</p>
+  </footer>
     </body>
-</html
+    </html>
